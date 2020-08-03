@@ -16,6 +16,10 @@ $lightGreen: #EEFCEE
     font-weight: 600
     text-decoration: none
     display: inline-block
+    transition: all ease 0.3s
+    &:hover,
+    &:focus
+        background-color: rgba($darkGreen, 0.8)
 
 // Headings & Texts
 h2
@@ -120,8 +124,12 @@ header
                     text-decoration: none
                     font-size: 17px
                     margin-top: 20px
+                    transition: all ease 0.3s
                     &:first-child
                         margin-top: 0
+                    &:hover,
+                    &:focus
+                        color: rgba(white, 0.8)
             .rrss // ul
                 width: 100%
                 margin-bottom: 18vh
@@ -130,6 +138,10 @@ header
                 a
                     color: white
                     text-decoration: none
+                    transition: all ease 0.3s
+                    &:hover,
+                    &:focus
+                        color: rgba(white, 0.8)
 
 @media (min-width: 760px)
     header
@@ -200,13 +212,18 @@ header
             .menu
                 &.show
                 .links
+                    a
+                        margin-left: 42px
                 .rrss
+                    a
+                        margin-left: 42px
 
 @media (min-width: 1200px)
     header
         .header-inner
             padding: 
-                top: 52px
+                // top: 52px
+                top: 58px
                 left: 72px
                 right: 72px
             .logo
@@ -221,7 +238,11 @@ header
             .menu
                 &.show
                 .links
+                    a
+                        margin-left: 54px
                 .rrss
+                    a
+                        margin-left: 54px
 
 // Hero
 .hero
@@ -349,6 +370,9 @@ header
             left: 72px
             right: 72px
             bottom: 50px
+        &::after
+            background-size: 48%
+            background-position: -2% -5%
         .data
             width: 45%
             h1
@@ -684,11 +708,15 @@ header
 @media (min-width: 1200px)
     .steps
         padding: 
+            top: 76px
             left: 160px
+            bottom: 52px
             right: 160px
         &::before
         h2
         .step
+            p
+                width: 83%
 
 @media (min-width: 1300px)
     .steps
@@ -729,9 +757,8 @@ header
         width: 100%
         background-color: $green
         color: white
-        // padding: 28px 26px
         padding: 34px 26px 28px 26px
-        // padding: 28px 26px 28px 44px
+        border-radius: 6px
         box-sizing: border-box
         .check-wrapper
             padding-left: 24px
@@ -879,6 +906,7 @@ header
             -ms-progress-appearance: none
             appearance: none
             background-color: transparent
+            resize: none
         button
             margin-top: 8px
             text-align: center
@@ -891,6 +919,10 @@ header
             border: none
             font-weight: 600
             padding: 11px 0
+            transition: all ease 0.3s
+            &:hover,
+            &:focus
+                background-color: rgba($green, 0.8)
 
 @media (min-width: 760px)
     .contacto
@@ -928,7 +960,11 @@ header
             form
             .p-data
                 input
+                    font-size: 13px
+                    padding: 8px 12px
             textarea
+                font-size: 13px
+                padding: 8px 12px
             button
                 width: auto
                 padding: 11px 20px
@@ -942,9 +978,27 @@ header
 
 @media (min-width: 1200px)
     .contacto
+        align-items: center
         padding: 
             left: 140px
             right: 140px
+            bottom: 82px
+        .data
+            h2
+                width: 90%
+            .p-data
+                display: flex
+                justify-content: space-between
+                align-items: center
+                align-content: center
+                input
+                    margin-top: 0
+                    width: 49%
+            button
+                margin-top: 6px
+        img
+            margin-bottom: 0
+            width: 46%
 
 @media (min-width: 1300px)
     .contacto
