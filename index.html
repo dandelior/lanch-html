@@ -11,6 +11,7 @@
 <body>
     <div class="app">
       
+        <!-- Header -->
         <header>
             <div class="header-inner">
                 <a class="logo" href="/">
@@ -25,10 +26,10 @@
                 </div>
                 <nav class="menu" id="menu">
                     <ul class="links">
-                        <a href="#">Inicio</a>
-                        <a href="#">¿Cómo funciona?</a>
-                        <a href="#">Planes</a>
-                        <a href="#">Contrata</a>
+                        <a href="#inicio">Inicio</a>
+                        <a href="#steps" class="goToComoFunciona">¿Cómo funciona?</a>
+                        <a href="#planes" class="goToPlanes">Planes</a>
+                        <a href="#contrata" class="goToContrata">Contrata</a>
                     </ul>
                     <ul class="rrss">
                         <a href="https://instagram.com/somoslanch" target="_blank">
@@ -41,32 +42,35 @@
         </header>
 
         <!-- Hero -->
-        <div class="hero">
-            <div class="data">
-                <h1>
-                    Menú digital para tu negocio
-                </h1>
-                <p>
-                    Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida.
-                </p>
-                <a href="#" class="button">
-                    Ver Demo
-                </a>
+        <div class="hero" id="inicio">
+            <div class="hero-inner">
+                <div class="data">
+                    <h1>
+                        Menú digital para tu negocio
+                    </h1>
+                    <p>
+                        Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida.
+                    </p>
+                    <a href="#" class="button">
+                        Ver Demo
+                    </a>
+                </div>
+                <img src="assets/img/il_codigo_qr.svg">
             </div>
-            <img src="assets/img/il_codigo_qr.svg">
         </div>
 
         <!-- Introduccion -->
         <div class="intro">
-            <!-- <div class="img"></div> -->
-            <img src="assets/img/il_menu.svg">
-            <div class="data">
-                <h2>
-                    Olvídate de crear cientos de Menús
-                </h2>
-                <p>
-                    Con Lanch obtienes tu menu en un sitio web que tus clientes pueden consultar a través de un link o código QR. Podrás editarlo las veces que quieras de forma rápida y sencilla.
-                </p>
+            <div class="intro-inner">
+                <img src="assets/img/il_menu.svg">
+                <div class="data">
+                    <h2>
+                        Olvídate de crear cientos de Menús
+                    </h2>
+                    <p>
+                        Con Lanch obtienes tu menu en un sitio web que tus clientes pueden consultar a través de un link o código QR. Podrás editarlo las veces que quieras de forma rápida y sencilla.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -75,97 +79,107 @@
             <h2>
                 Perfecto para tu negocio
             </h2>
-            <div class="negocio">
-                <img src="/assets/img/icon-negocios.svg">
-                <h5>Negocios de barrio</h5>
-            </div>
-            <div class="negocio">
-                <img src="/assets/img/icon-restaurant.svg">
-                <h5>Locales de comida</h5>
-            </div>
-            <div class="negocio">
-                <img src="/assets/img/icon-foodtruck.svg">
-                <h5>Picadas y Foodtruck</h5>
+            <div class="negocios-inner">
+                <div class="negocio">
+                    <img src="/assets/img/icon-negocios.svg">
+                    <h5>Negocios de barrio</h5>
+                </div>
+                <div class="negocio">
+                    <img src="/assets/img/icon-restaurant.svg">
+                    <h5>Locales de comida</h5>
+                </div>
+                <div class="negocio">
+                    <img src="/assets/img/icon-foodtruck.svg">
+                    <h5>Picadas y Foodtruck</h5>
+                </div>
             </div>
         </div>
 
         <!-- pasos -->
-        <div class="steps">
+        <div class="steps" id="steps">
             <h2>
                 ¿Cómo funciona?
             </h2>
             <div class="waves"></div>
-            <div class="step">
-                <p>
-                    <b>Escríbenos</b> sólicitando tu <b>semana de prueba gratis</b>.
-                </p>
-            </div>
-            <div class="step">
-                <p>
-                    <b>Elije tu plantilla</b>, nosotros te enviamos los accesos para que puedas <b>subir tus productos y precios</b>.
-                </p>
-            </div>
-            <div class="step">
-                <p>
-                    Obtén tu Código <b>QR y/o link</b> y listo! Ya puedes utilizar tu menú digital.
-                </p>
+            <div class="steps-inner">
+                <div class="step">
+                    <p>
+                        <b>Escríbenos</b> sólicitando tu <b>semana de prueba gratis</b>.
+                    </p>
+                </div>
+                <div class="step">
+                    <p>
+                        <b>Elije tu plantilla</b>, nosotros te enviamos los accesos para que puedas <b>subir tus productos y precios</b>.
+                    </p>
+                </div>
+                <div class="step">
+                    <p>
+                        Obtén tu Código <b>QR y/o link</b> y listo! Ya puedes utilizar tu menú digital.
+                    </p>
+                </div>
             </div>
         </div>
 
         <!-- Precio -->
-        <div class="pricing">
+        <div class="pricing" id="planes">
             <h2>
                 Te lo Hacemos Simple
             </h2>
-            <img src="/assets/img/ilu_pricing.svg">
-            <div class="price-box">
-                <div class="check-wrapper">
-                    <ul class="checks">
-                        <p class="check">Plantilla a elección.</p>
-                        <p class="check">Menú Autoadministrable.</p>
-                        <p class="check">Código QR y Página Web.</li>
-                        <p class="check">Dominio y Hosting incluidos.</p>
-                        <p class="check">Video explicativo de uso.</p>
-                        <p class="check">Duración de 1 mes.</p>
-                    </ul>
+            <div class="pricing-inner">
+                <img src="/assets/img/ilu_pricing.svg">
+                <div class="price-box">
+                    <div class="check-wrapper">
+                        <ul class="checks">
+                            <p class="check">Plantilla a elección.</p>
+                            <p class="check">Menú Autoadministrable.</p>
+                            <p class="check">Código QR y Página Web.</li>
+                            <p class="check">Dominio y Hosting incluidos.</p>
+                            <p class="check">Video explicativo de uso.</p>
+                            <p class="check">Duración de 1 mes.</p>
+                        </ul>
+                    </div>
+                    <h3 class="price">
+                        $6.990
+                    </h3>
+                    <a href="#" class="button goToContrata">
+                        Pruébalo una semana Gratis
+                    </a>
                 </div>
-                <h3 class="price">
-                    $6.990
-                </h3>
-                <a href="#" class="button">
-                    Pruébalo una semana Gratis
-                </a>
             </div>
         </div>
 
         <!-- Contacto -->
-        <div class="contacto">
-            <img src="/assets/img/ilu_contact.svg">
-            <div class="data">
-                <h2>Contrata Lanch y protege a tus clientes</h2>
-                <form action="">
-                    <div class="p-data">
-                        <input type="text" name="" id="" placeholder="Nombre">
-                        <input type="email" name="" id="" placeholder="Email">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+        <div class="contacto" id="contrata">
+            <div class="contacto-inner">
+                <img src="/assets/img/ilu_contact.svg">
+                <div class="data">
+                    <h2>Contrata Lanch y protege a tus clientes</h2>
+                    <form action="">
+                        <div class="p-data">
+                            <input type="text" name="" id="" placeholder="Nombre">
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
 
         <footer>
-            <div class="data">
-                <p>
-                    Escríbenos a <a href="mailto:hola@somoslanch.cl">
-                        hola@somoslanch.cl
-                    </a>
-                </p>
-            </div>
-            <div class="credits">
-                <p>
-                    Hecho con 🔥 por <img src="" alt="SAINTS">
-                </p>
+            <div class="footer-inner">
+                <div class="data">
+                    <p>
+                        Escríbenos a <a href="mailto:hola@somoslanch.cl">
+                            hola@somoslanch.cl
+                        </a>
+                    </p>
+                </div>
+                <div class="credits">
+                    <p>
+                        Hecho con 🔥 por <img src="/assets/img/saints.svg" alt="SAINTS">
+                    </p>
+                </div>
             </div>
         </footer>
 
