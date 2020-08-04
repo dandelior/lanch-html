@@ -156,10 +156,12 @@
                     <h2>Contrata Lanch y protege a tus clientes</h2>
                     <form id="ajaxForm" action="https://formsubmit.co/7ec3f99fe9e1b600c20fb68eb27cac55" method="POST">
                         <div class="p-data">
-                            <input type="text" name="name" placeholder="Nombre">
-                            <input type="email" name="email" placeholder="Email">
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde la Página Web">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="Nombre" placeholder="Nombre">
+                            <input type="email" name="Correo" placeholder="Email">
                         </div>
-                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                         <div class="success">Hemos recibido tu mensaje. Te responderemos a la brevedad :)</div> 
                         <button type="submit">Enviar</button>
                     </form>
