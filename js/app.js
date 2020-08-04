@@ -60,7 +60,7 @@
       var action = $(this).attr("action");
       $.ajax({
         type: "POST",
-        url: action,
+        url: "https://formsubmit.co/ajax/7ec3f99fe9e1b600c20fb68eb27cac55",
         crossDomain: true,
         data: new FormData(this),
         dataType: "json",
