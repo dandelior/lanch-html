@@ -11,48 +11,27 @@
         body.classList.toggle('hidden-x');
     }
 
-    var doc = document.documentElement;
-    var w = window;
-  
-    var prevScroll = w.scrollY || doc.scrollTop;
-    var curScroll;
-    var direction = 0;
-    var prevDirection = 0;
-  
-    var header = document.querySelector('header');
-  
-    var checkScroll = function() {
-  
-      curScroll = w.scrollY || doc.scrollTop;
-      if (curScroll > prevScroll) { 
-        //scrolled up
-        direction = 2;
-      }
-      else if (curScroll < prevScroll) { 
-        //scrolled down
-        direction = 1;
-      }
-  
-      if (direction !== prevDirection) {
-        toggleHeader(direction, curScroll);
-      }
-      
-      prevScroll = curScroll;
-    };
-  
-    var toggleHeader = function(direction, curScroll) {
-      if (direction === 2 && curScroll > 300) { 
-  
-        header.classList.add('fixed');
-        prevDirection = direction;
-      }
-      else if (direction === 1) {
-        header.classList.remove('fixed');
-        prevDirection = direction;
-      }
-    };
-    
-    window.addEventListener('scroll', checkScroll);
+    // Show/Hide scroll Header
+    var iScrollPos = 0;
+
+  	$(window).scroll(function () {
+        var iCurScrollPos = $(this).scrollTop();
+        if ($(window).scrollTop() > 400) {
+          $('header').addClass('fixed');
+          if (iCurScrollPos > iScrollPos) {
+              $('header').addClass('down');
+              $('header').removeClass('up');
+          } else {
+            $('header').removeClass('down');
+            $('header').addClass('up');
+          }
+        } else {
+          $('header').removeClass('fixed');
+          $('header').removeClass('up');
+          $('header').removeClass('down');
+        }
+  	    iScrollPos = iCurScrollPos;
+  	});
 
     // AJAX form
     $("#ajaxForm").submit(function(e){

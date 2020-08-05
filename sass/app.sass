@@ -8,11 +8,13 @@ $lightGreen: #EEFCEE
 
 // Buttons
 .button // definir en gral??
-    padding: 14px 23px
+    // padding: 14px 23px
+    padding: 13px 21px
     background-color: $darkGreen
     border-radius: 4px
     color: white
-    font-size: 14px
+    // font-size: 14px
+    font-size: 13px
     font-weight: 600
     text-decoration: none
     display: inline-block
@@ -21,10 +23,15 @@ $lightGreen: #EEFCEE
     &:focus
         background-color: rgba($darkGreen, 0.8)
 
+@media (min-width: 900px)
+    .button
+        padding: 14px 23px
+        font-size: 14px
+
 // Headings & Texts
 h2
     font-weight: 600
-    font-size: 28px
+    font-size: 26px
     line-height: 120%
     color: $darkGreen
     margin-top: 0
@@ -44,6 +51,7 @@ h2
 
 p
     font-size: 15px
+    // font-size: 14px
     line-height: 140%
 
 @media (min-width: 900px)
@@ -61,6 +69,18 @@ html
 body
     font-family: 'Poppins', sans-serif
     position: relative
+
+@keyframes up
+    0%
+        transform: translateY(0)
+    100%
+        transform: translateY(-100px)
+
+@keyframes down
+    0%
+        transform: translateY(-100px)
+    100%
+        transform: translateY(0)
 
 // Header
 header
@@ -85,7 +105,7 @@ header
         .logo // a
             width: 50%
             img.logo-img
-                width: 109px
+                width: 102px
         .hamburger-container
             position: relative
             z-index: 9999
@@ -175,6 +195,10 @@ header
             .menu
                 .links
                     a
+    &.up
+        animation: up 0.3s forwards
+    &.down
+        animation: down 0.3s forwards
 
 @media (min-width: 760px)
     header
@@ -300,7 +324,7 @@ header
     // z-index: 12
     &:after
         content: ''
-        background-size: 220%
+        background-size: 200%
         background-position: 50% 20%
         background-repeat: no-repeat 
         background-image: url('../assets/img/ameba1.svg')
@@ -328,6 +352,7 @@ header
                 margin-bottom: 16px
             p // definir en gral
                 font-size: 16px
+                font-size: 15px
                 color: rgba(white, 0.8)
                 line-height: 135%
                 width: 90%

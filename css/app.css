@@ -215,11 +215,11 @@ textarea {
 }
 
 .button {
-  padding: 14px 23px;
+  padding: 13px 21px;
   background-color: #0A3E2C;
   border-radius: 4px;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
@@ -229,9 +229,15 @@ textarea {
   background-color: rgba(10, 62, 44, 0.8);
 }
 
+@media (min-width: 900px) {
+  .button {
+    padding: 14px 23px;
+    font-size: 14px;
+  }
+}
 h2 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 120%;
   color: #0A3E2C;
   margin-top: 0;
@@ -276,6 +282,22 @@ body {
   position: relative;
 }
 
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 header {
   transition: all ease 0.3s;
 }
@@ -300,7 +322,7 @@ header .header-inner .logo {
   width: 50%;
 }
 header .header-inner .logo img.logo-img {
-  width: 109px;
+  width: 102px;
 }
 header .header-inner .hamburger-container {
   position: relative;
@@ -402,6 +424,13 @@ header.fixed .header-inner {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+header.up {
+  animation: up 0.3s forwards;
+}
+header.down {
+  animation: down 0.3s forwards;
+}
+
 @media (min-width: 760px) {
   header .header-inner {
     padding-left: 34px;
@@ -505,7 +534,7 @@ header.fixed .header-inner {
 }
 .hero:after {
   content: "";
-  background-size: 220%;
+  background-size: 200%;
   background-position: 50% 20%;
   background-repeat: no-repeat;
   background-image: url("../assets/img/ameba1.svg");
@@ -536,6 +565,7 @@ header.fixed .header-inner {
 }
 .hero .hero-inner .data p {
   font-size: 16px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 135%;
   width: 90%;
