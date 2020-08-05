@@ -17,7 +17,7 @@
   	$(window).scroll(function () {
         var iCurScrollPos = $(this).scrollTop();
         if ($(window).scrollTop() > 400) {
-          $('header').addClass('fixed');
+          $('header').addClass('on-scroll');
           if (iCurScrollPos > iScrollPos) {
               $('header').addClass('down');
               $('header').removeClass('up');
@@ -26,7 +26,7 @@
             $('header').addClass('up');
           }
         } else {
-          $('header').removeClass('fixed');
+          $('header').removeClass('on-scroll');
           $('header').removeClass('up');
           $('header').removeClass('down');
         }

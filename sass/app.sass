@@ -85,6 +85,13 @@ body
 // Header
 header
     transition: all ease 0.3s
+    position: absolute
+    top: 0
+    margin: auto
+    z-index: 99999
+    left: 0
+    right: 0
+    width: 100%
     .header-inner
         position: absolute
         top: 0
@@ -167,14 +174,8 @@ header
                     &:hover,
                     &:focus
                         color: rgba(white, 0.8)
-    &.fixed
-        z-index: 99999
-        margin: auto
+    &.on-scroll
         position: fixed
-        top: 0
-        left: 0
-        right: 0
-        width: 100%
         background-color: rgba($green, 0.7)
         &::after
             content: ''

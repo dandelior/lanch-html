@@ -300,6 +300,13 @@ body {
 }
 header {
   transition: all ease 0.3s;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 header .header-inner {
   position: absolute;
@@ -396,17 +403,11 @@ header .header-inner .menu .rrss a {
 header .header-inner .menu .rrss a:hover, header .header-inner .menu .rrss a:focus {
   color: rgba(255, 255, 255, 0.8);
 }
-header.fixed {
-  z-index: 99999;
-  margin: auto;
+header.on-scroll {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
   background-color: rgba(7, 172, 4, 0.7);
 }
-header.fixed::after {
+header.on-scroll::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -419,7 +420,7 @@ header.fixed::after {
   right: 0;
   bottom: 0;
 }
-header.fixed .header-inner {
+header.on-scroll .header-inner {
   position: relative;
   padding-top: 26px;
   padding-bottom: 26px;
