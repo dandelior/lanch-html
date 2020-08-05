@@ -31,41 +31,52 @@
           $('header').removeClass('down');
         }
   	    iScrollPos = iCurScrollPos;
-  	});
+    });
+    
+    const linkMenu = document.querySelectorAll('.menu .links a');
+    // const linkComoFunciona = document.getElementsByClassName('goToComoFunciona');
 
-    // AJAX form
-    $("#ajaxForm").submit(function(e){
-      e.preventDefault();
-      var action = $(this).attr("action");
-      $.ajax({
-        type: "POST",
-        url: "https://formsubmit.co/ajax/7ec3f99fe9e1b600c20fb68eb27cac55",
-        crossDomain: true,
-        data: new FormData(this),
-        dataType: "json",
-        contentType: "multipart/form-data",
-        processData: false,
-        contentType: false,
-        headers: {
-          "Accept": "application/json"
-        }
-      }).done(function() {
-         $('.success').addClass('is-active');
-      }).fail(function() {
-         alert('Ha ocurrido un error. Por favor contáctanos a hola@somoslanch.cl')
+    $('.goToInicio').click(function() {
+      $('html, body').animate({
+        scrollTop: $('#inicio').offset().top
       });
     });
+    $('.goToComoFunciona').click(function() {
+      $('html, body').animate({
+        scrollTop: $('#steps').offset().top-140
+      });
+    });
+    $('.goToPlanes').click(function() {
+      $('html, body').animate({
+        scrollTop: $('#planes').offset().top-40
+      });
+    });
+    $('.goToContrata').click(function() {
+      $('html, body').animate({
+        scrollTop: $('#contrata').offset().top
+      });
+    });
+    // onClickLinkMenu = (e) => {
+    //   e.scrollTo();
+    // }
+
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (viewportWidth < 760) {
+      for(var i = 0; linkMenu.length; i++) {
+        linkMenu[i].addEventListener("click", function(){
+          // console.log("click!");
+          menu.classList.toggle('show');
+          hamburger.classList.toggle('is-active');
+          body.classList.toggle('hidden-x');
+          // onClickLinkMenu(linkMenu[i]);
+        }, false)
+      }
+      // console.log('Pantalla movil');
+    } 
+    // else {
+    //   for(var i = 0; linkMenu.length; i++) {
+    //     // onClickLinkMenu(linkMenu[i]);
+    //   }
+    // }
   
-  })();
-
-// var iScrollPos = 0;
-
-// window.addEventListener('scroll', function() {
-//     var iCurScrollPos = window.scrollY;
-//     if (iCurScrollPos > iScrollPos && iCurScrollPos > 120) {
-//         document.querySelector('header').classList.add('fixed');
-//     } else {
-//         document.querySelector('header').classList.remove('fixed');
-//     }
-//     iCurScrollPos = iCurScrollPos;
-// })
+})();

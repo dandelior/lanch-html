@@ -59,10 +59,10 @@
                 </div>
                 <nav class="menu" id="menu">
                     <ul class="links">
-                        <a href="#inicio">Inicio</a>
-                        <a href="#steps" class="goToComoFunciona">¿Cómo funciona?</a>
-                        <a href="#planes" class="goToPlanes">Planes</a>
-                        <a href="#contrata" class="goToContrata">Contrata</a>
+                        <a href="#" class="goToInicio">Inicio</a>
+                        <a href="#" class="goToComoFunciona">¿Cómo funciona?</a>
+                        <a href="#" class="goToPlanes">Planes</a>
+                        <a href="#" class="goToContrata">Contrata</a>
                     </ul>
                     <ul class="rrss">
                         <a href="https://instagram.com/somoslanch" target="_blank">
@@ -222,6 +222,30 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // AJAX form
+        $("#ajaxForm").submit(function(e){
+        e.preventDefault();
+        var action = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            url: "https://formsubmit.co/ajax/7ec3f99fe9e1b600c20fb68eb27cac55",
+            crossDomain: true,
+            data: new FormData(this),
+            dataType: "json",
+            contentType: "multipart/form-data",
+            processData: false,
+            contentType: false,
+            headers: {
+            "Accept": "application/json"
+            }
+        }).done(function() {
+            $('.success').addClass('is-active');
+        }).fail(function() {
+            alert('Ha ocurrido un error. Por favor contáctanos a hola@somoslanch.cl')
+        });
+        });
+    </script>
     <script src="/js/app.js"></script>
 </body>
 </html>
