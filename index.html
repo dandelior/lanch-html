@@ -2,23 +2,260 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanch</title>
-    <style>
-        div {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"">
+    <title>Lanch — Menú digital para tu negocio</title>
+    <meta content="Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida." name="description">
+    <!-- OG -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lanch — Menú digital para tu negocio" />
+    <meta property="og:description" content="Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida." />
+    <meta property="og:image" content="https://test.somoslanch.cl/assets/img/og-facebook-2.jpg" />
+    <meta property="og:url" content=”https://www.somoslanch.cl” />
+    <meta content="summary" name="twitter:card">
+    <meta name="twitter:title" content="Lanch — Menú digital para tu negocio" />
+    <meta name="twitter:description" content="Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida." />
+    <meta name="twitter:url" content="https://www.somoslanch.cl" />
+    <meta name="twitter:image" content="https://test.somoslanch.cl/assets/img/og-twitter.jpg" />
+    <meta name="robots" content="noindex, nofollow"> 
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/fav/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/fav/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/fav/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/fav/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/fav/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/fav/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/fav/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/fav/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/fav/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/fav/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/fav/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/fav/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/fav/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Lanch"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/fav/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/fav/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/fav/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/fav/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/fav/mstile-310x310.png" />
+    <link rel="stylesheet" href="/css/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <div>
-        <p>Pronto</p>
+    <div class="app">
+      
+        <!-- Header -->
+        <header>
+            <div class="header-inner">
+                <a class="logo" href="/">
+                    <img class="logo-img" src="/assets/img/logo.png" alt="">
+                </a>
+                <div class="hamburger-container" id="triggerMenu">
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <nav class="menu" id="menu">
+                    <ul class="links">
+                        <a href="#" class="goToInicio">Inicio</a>
+                        <a href="#" class="goToComoFunciona">¿Cómo funciona?</a>
+                        <a href="#" class="goToPlanes">Planes</a>
+                        <a href="#" class="goToContrata">Contrata</a>
+                    </ul>
+                    <ul class="rrss">
+                        <a href="https://instagram.com/somoslanch" target="_blank">
+                            <span>Síguenos en</span>
+                            <img src="/assets/img/icon-instagram.svg" alt="Ir a Instagram">
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <div class="hero" id="inicio">
+            <div class="hero-inner">
+                <div class="data">
+                    <span class="proximamente">Pronto</span>
+                    <h1>
+                        Menú digital para tu negocio
+                    </h1>
+                    <p>
+                        Entrégale a tus clientes una forma de ver tus precios de manera segura y rápida.
+                        Pide tu semana de prueba <span style="font-weight: 700;">GRATIS</span> antes que se lance.
+                    </p>
+                    <a href="#" class="button goToContrata">
+                        Solicitar aquí
+                    </a>
+                    <!-- <a href="#" class="button">
+                        Ver Demo
+                    </a> -->
+                </div>
+                <img src="assets/img/il_codigo_qr.svg">
+            </div>
+        </div>
+
+        <!-- Introduccion -->
+        <div class="intro">
+            <div class="intro-inner">
+                <img src="assets/img/il_menu.svg">
+                <div class="data">
+                    <h2>
+                        Olvídate de crear cientos de Menús
+                    </h2>
+                    <p>
+                        Con Lanch obtienes tu menu en un sitio web que tus clientes pueden consultar a través de un link o código QR. Podrás editarlo las veces que quieras de forma rápida y sencilla.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Negocios -->
+        <div class="negocios">
+            <h2>
+                Perfecto para tu negocio
+            </h2>
+            <div class="negocios-inner">
+                <div class="negocio">
+                    <img src="/assets/img/icon-negocios.svg">
+                    <h5>Negocios de barrio</h5>
+                </div>
+                <div class="negocio">
+                    <img src="/assets/img/icon-restaurant.svg">
+                    <h5>Locales de comida</h5>
+                </div>
+                <div class="negocio">
+                    <img src="/assets/img/icon-foodtruck.svg">
+                    <h5>Picadas y Foodtruck</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- pasos -->
+        <div class="steps" id="steps">
+            <h2>
+                ¿Cómo funciona?
+            </h2>
+            <div class="waves"></div>
+            <div class="steps-inner">
+                <div class="step">
+                    <p>
+                        <b>Escríbenos</b> sólicitando tu <b>semana de prueba gratis</b>.
+                    </p>
+                </div>
+                <div class="step">
+                    <p>
+                        <b>Elije tu plantilla</b>, nosotros te enviamos los accesos para que puedas <b>subir tus productos y precios</b>.
+                    </p>
+                </div>
+                <div class="step">
+                    <p>
+                        Obtén tu Código <b>QR y/o link</b> y listo! Ya puedes utilizar tu menú digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Precio -->
+        <div class="pricing" id="planes">
+            <h2>
+                Un solo plan.<br/>
+                Te lo Hacemos Simple
+            </h2>
+            <div class="pricing-inner">
+                <img src="/assets/img/ilu_pricing.svg">
+                <div class="price-box">
+                    <div class="check-wrapper">
+                        <ul class="checks">
+                            <p class="check">Plantilla a elección.</p>
+                            <p class="check">Menú Autoadministrable.</p>
+                            <p class="check">Código QR y Link Web.</li>
+                            <p class="check">Dominio tipo <b>tunegocio.somoslanch.cl</b>.</p>
+                            <p class="check">Hosting incluido.</p>
+                            <p class="check">Video explicativo de uso.</p>
+                        </ul>
+                    </div>
+                    <h3 class="price" style="text-align: center;">
+                        $6.990
+                    </h3>
+                    <a href="#" class="button goToContrata">
+                        <!-- Pruébalo una semana Gratis -->
+                        Pruébala una Semana Gratis
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="contacto" id="contrata">
+            <div class="contacto-inner">
+                <img src="/assets/img/ilu_contact.svg">
+                <div class="data">
+                    <h2>
+                        <!-- Contrata Lanch y protege a tus clientes -->
+                        <span style="font-weight: 400;">Lanch está a punto de salir del horno,</span><br/>Solicita tu prueba.
+                    </h2>
+                    <form id="ajaxForm" action="https://formsubmit.co/7ec3f99fe9e1b600c20fb68eb27cac55" method="POST">
+                        <div class="p-data">
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde la Página Web">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="Nombre" placeholder="Nombre">
+                            <input type="email" name="Correo" placeholder="Email">
+                        </div>
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <div class="success">Hemos recibido tu mensaje. Te responderemos a la brevedad :)</div> 
+                        <button type="submit">Solicitar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-inner">
+                <div class="data">
+                    <p>
+                        Escríbenos a <a href="mailto:hola@somoslanch.cl">
+                            hola@somoslanch.cl
+                        </a>
+                    </p>
+                </div>
+                <div class="credits">
+                    <p>
+                        Hecho con 🔥 por <img src="/assets/img/saints.svg" alt="SAINTS">
+                    </p>
+                </div>
+            </div>
+        </footer>
+
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // AJAX form
+        $("#ajaxForm").submit(function(e){
+        e.preventDefault();
+        var action = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            url: "https://formsubmit.co/ajax/7ec3f99fe9e1b600c20fb68eb27cac55",
+            crossDomain: true,
+            data: new FormData(this),
+            dataType: "json",
+            contentType: "multipart/form-data",
+            processData: false,
+            contentType: false,
+            headers: {
+            "Accept": "application/json"
+            }
+        }).done(function() {
+            $('.success').addClass('is-active');
+        }).fail(function() {
+            alert('Ha ocurrido un error. Por favor contáctanos a hola@somoslanch.cl')
+        });
+        });
+    </script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
