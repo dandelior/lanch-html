@@ -53,7 +53,7 @@
     });
     $('.goToContrata').click(function() {
       $('html, body').animate({
-        scrollTop: $('#contrata').offset().top
+        scrollTop: $('#contrata').offset().top-60
       });
     });
     // onClickLinkMenu = (e) => {
