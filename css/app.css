@@ -1103,7 +1103,7 @@ header.down {
 .pricing .pricing-inner .price-box .check-wrapper .checks .check {
   display: block;
   font-size: 15px;
-  margin-top: 18px;
+  margin-top: 12px;
   position: relative;
 }
 .pricing .pricing-inner .price-box .check-wrapper .checks .check:first-child {
@@ -1125,12 +1125,26 @@ header.down {
   font-size: 32px;
   font-weight: 700;
   margin-top: 28px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+.pricing .pricing-inner .price-box .price span {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 400;
 }
 .pricing .pricing-inner .price-box .price::after {
+  color: white;
   content: "Mensual";
   font-size: 16px;
   font-weight: 400;
+}
+.pricing .pricing-inner .price-box span.disclaimer {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
 }
 .pricing .pricing-inner .price-box .button {
   width: 100%;
